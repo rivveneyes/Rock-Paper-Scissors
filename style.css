@@ -1,0 +1,45 @@
+*{
+margin:0px;
+padding:0px;
+list-style-type: none;
+}
+
+body{
+    background-color:teal;
+}
+
+.title{
+    max-width: 80%;
+    font-size: 3rem;
+    margin: auto;
+
+}
+figure{
+    text-align: center;
+    margin:0px 20px;
+    padding: 0px;
+}
+figcaption{
+    border:5px solid purple;
+}
+.img-container{
+    background-color:silver;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+img{
+    padding-top:5px;
+    height:65px;
+    width: 80px;
+    background-color: aliceblue;
+    border:8px solid transparent;
+}
+img:hover{
+    border:8px solid rgba(108, 216, 76, 0.712);
+}
+
+h3{
+    background-color: lightblue;
+}
+
