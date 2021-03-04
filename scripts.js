@@ -1,15 +1,20 @@
 const imgContainer=document.querySelector('.img-container');
-const userpicked= document.querySelector("p");
+const userpicked= document.querySelector("h3");
 
 
 
 
-//right now im pulling images from the actaull site and appending them to the p tag 
+//clone Node insert or replace in childNoder OF userpicked
 imgContainer.addEventListener("click", e=>{
     let option =e.target;
-    if(e.target.className=="option"){
-        console.log("hit")
-    userpicked.appendChild(e.target)
-    }
-})
+    let dupli = option.cloneNode(true)
+    let imgPicks = userpicked.childNodes;
+    
+    if(option.className=="option"&& imgPicks.length<=1){
+    userpicked.appendChild(dupli);
+    return
+}
+if( option.className=="option"&&imgPicks.length>=2){
+    userpicked.replaceChild(dupli,imgPicks[1])
+}})
 
