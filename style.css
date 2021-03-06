@@ -103,11 +103,12 @@ button{
 }
 
 
-
-/* to palce on winner */
-.winner{
-    border:8px solid red;
+footer{
+    margin-top: 50px;
+    font-size: 8px;
+    
 }
-.loser{
-    border: 8px solid rgba(108, 216, 76, 0.712);   
+hr{
+    border-color:black;
+    width: 40%;
 }
