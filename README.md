@@ -1,3 +1,3 @@
 # Rock-Paper-Scissors
 
-<img src="rescources/R-P-S-thumbnail.png ">
+<img src="resources/R-P-S-thumbnail.png alt="photo of Rock-Paper-Scissors game" ">
