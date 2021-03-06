@@ -7,33 +7,34 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <h1 class="title">ROCK-PAPER-SCISSORS GAME</h1>
-        
-    <div class="img-container">
 
+        <h1 class="title">ROCK-PAPER-SCISSORS GAME</h1> 
+        <div class="anounce">Pick Your Option</div>
+    <div class="img-container">
+        
      <figure>
         <figcaption>Paper</figcaption>
-        <img class="option" src="resources/noun_Paper_3743277.svg" alt="Paper img">
+        <img class="option" id="paper" src="resources/noun_Paper_3743277.svg" alt="Paper img">
     </figure>
     <figure>
         <figcaption>Rock</figcaption>
-        <img class="option" src="resources/noun_rock_2614278.svg" alt="Rock img">
+        <img class="option" id="rock" src="resources/noun_rock_2614278.svg" alt="Rock img">
     </figure>
     <figure>
         <figcaption>Scissors</figcaption>
-        <img class="option" src="resources/noun_Scissors_329968.svg" alt="Scissors img">
+        <img id="scissors"class="option" src="resources/noun_Scissors_329968.svg" alt="Scissors img">
     </figure>
     </div>
 
 
-    <div>
+    <div class="game">
+    <h2>YOUR WINS:</h2>
 
-    <h2>score board:</h2>
-     <h3>You Picked</h3>
-     <h3>computer Picked</h3>
+     <h3 class="user">You Picked</h3>
+     <h3 class="computer">Computer</h3>
+     <button type="button">Play</button>
     </div>
-
-
+    
     <script src="scripts.js"></script>
     </body>
 </html>
