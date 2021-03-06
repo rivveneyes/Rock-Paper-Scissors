@@ -53,11 +53,11 @@ h3{
 }
 
 h2{
-    border: 4px solid silver;
-    width: fit-content;
-    margin: auto;
-    margin-top: 5px;
+    width: 80%;
+    text-align: center;
+    margin: 5px auto;
     color: white;
+    border: 8px solid black;
 }
 p{
     text-align: center;
@@ -72,13 +72,7 @@ p{
     border: 10px solid purple;
 }
 
-h2{
-    border: 4px solid silver;
-    width: fit-content;
-    margin: auto;
-    margin-top: 5px;
-    color: white;
-}
+
 h3{
     background-color: lightblue;
     text-align: center;
