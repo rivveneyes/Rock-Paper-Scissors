@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Rock-Paper-Scissors</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
+  <head>
+    <title>Rock-Paper-Scissors</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="title">ROCK-PAPER-SCISSORS GAME</header>
+    <div class="game-container">
+      <h1 class="options">Pick Your Option</h1>
+      <div class="img-container">
+        <figure>
+          <figcaption>Paper</figcaption>
+          <img
+            class="option"
+            id="paper"
+            src="resources/noun_Paper_3743277.svg"
+            alt="Paper"
+          />
+        </figure>
+        <figure>
+          <figcaption>Rock</figcaption>
+          <img
+            class="option"
+            id="rock"
+            src="resources/noun_rock_2614278.svg"
+            alt="Rock"
+          />
+        </figure>
+        <figure>
+          <figcaption>Scissors</figcaption>
+          <img
+            id="scissors"
+            class="option"
+            src="resources/noun_Scissors_329968.svg"
+            alt="Scissors"
+          />
+        </figure>
+      </div>
 
-        <h1 class="title">ROCK-PAPER-SCISSORS GAME</h1> 
-        <div class="anounce">Pick Your Option</div>
-    <div class="img-container">
-        
-     <figure>
-        <figcaption>Paper</figcaption>
-        <img class="option" id="paper" src="resources/noun_Paper_3743277.svg" alt="Paper img">
-    </figure>
-    <figure>
-        <figcaption>Rock</figcaption>
-        <img class="option" id="rock" src="resources/noun_rock_2614278.svg" alt="Rock img">
-    </figure>
-    <figure>
-        <figcaption>Scissors</figcaption>
-        <img id="scissors"class="option" src="resources/noun_Scissors_329968.svg" alt="Scissors img">
-    </figure>
-    </div>
-
-
-    <div class="game">
-    <h2>YOUR WINS:</h2>
-
-     <h3 class="user">You Picked</h3>
-     <h3 class="computer">Computer</h3>
-     <button type="button">Play</button>
+      <h2 id="total-wins">Wins: Loss:</h2>
+      <div class="game-display">
+        <figure id="person-pick">
+          <figcaption>You Picked</figcaption>
+        </figure>
+        <figure id="pc-picked">
+          <figcaption>PC Picked</figcaption>
+        </figure>
+      </div>
+      <button id="play" type="button">Play</button>
+      <span id="outcome"></span>
     </div>
     <footer>
-        <em>attributions:</em><br />
+      <em>attributions:</em><br />
+      <p>
         Paper by Hamid From the thenounproject.com
-        <hr>
+        <br />
         Scissors by lastpark From thenounproject.com
-        <hr>
+        <br />
         Rock by Dong From the thenounproject.com
-        <hr>
-        
+        <br />
+      </p>
     </footer>
     <script src="scripts.js"></script>
-    </body>
+  </body>
 </html>

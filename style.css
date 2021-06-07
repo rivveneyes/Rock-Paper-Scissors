@@ -1,114 +1,88 @@
-*{
-    box-sizing: border-box;
-margin:0px;
-padding:0px;
-list-style-type: none;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+body {
+  background-color: whitesmoke;
 }
 
-body{
-    background-color:teal;
+.title {
+  font-size: 2.3rem;
+  text-align: center;
+  color: teal;
 }
-
-.title{
-    width: 80%;
-    font-size: 1.3rem;
-    text-align: center;
-    margin: auto;
-    color: white;
+.game-container {
+  background-color: silver;
+  text-align: center;
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+  min-height: 500px;
+  padding: 10px 50px 20px;
+  margin: auto;
+  margin-top: 50px;
 }
-.anounce{
-    width: 100%;
-    background-color: silver;
-    text-align: center;
-    color: white;
-
+.img-container {
+  display: flex;
+  justify-content: center;
 }
-figure{
-    text-align: center;
-    margin:0px 20px;
-    padding: 0px;
+figure {
+  margin: 0px 20px;
+  padding: 0px;
+  height: fit-content;
+  height: -moz-fit-content;
 }
-figcaption{
-    border:5px solid purple;
+img {
+  min-height: 100px;
+  min-width: 100px;
 }
-.img-container{
-    background-color:silver;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+figcaption {
+  text-decoration: underline #000 2px;
+  padding-bottom: 5px;
 }
-img{
-    padding-top:5px;
-    height:65px;
-    width: 80px;
-    background-color: aliceblue;
-    border:8px solid transparent;
+.option {
+  height: 65px;
+  width: 80px;
+  background-color: #fff;
+  border: 5px solid transparent;
 }
-figure>img:hover{
-    border:8px solid black;
+.img-container .option:hover {
+  border: 5px solid rgb(105, 216, 216);
 }
-
-h3{
-    background-color: lightblue;
+.game-display {
+  border: 5px solid;
+  min-width: 50%;
+  min-height: 260px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
-
-h2{
-    width: 80%;
-    text-align: center;
-    margin: 5px auto;
-    color: white;
-    border: 8px solid black;
+button {
+  border-radius: 5px;
+  border: 2px solid #666;
+  width: 40%;
+  margin: auto;
+  background-color: rgb(105, 216, 216);
 }
-p{
-    text-align: center;
-    background-color: silver;
-    margin: auto;
-    color:black;
+.game-display > figure {
+  border: 5px solid transparent;
+  margin: 10px;
 }
-
-
-
-.game{
-    border: 10px solid purple;
+figure.winner {
+  border: 5px solid blue;
 }
-
-
-h3{
-    background-color: lightblue;
-    text-align: center;
+figure.loser {
+  border: 5px solid red;
 }
-.user{
-    border:10px solid purple;
-    display: inline-block;
-    margin-left: 20px;
+#outcome {
+  padding-top: 20px;
+  font-size: 1.5rem;
+  display: block;
 }
-.computer{
-    border:10px solid purple;
-    float: right;
-    margin-right: 20px;
-}
-
-h3>img{
-    background-color: white;
-    width: 120px;
-display:block;
-}
-
-button{
-    border: 6px solid purple;
-    display:block;
-    width:50px;
-    margin: auto;
-    margin-bottom: 10px;
-}
-
-
-footer{
-    margin-top: 50px;
-    font-size: 8px;
-    
-}
-hr{
-    border-color:black;
-    width: 40%;
+footer {
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+  border: 2px solid #666;
+  margin: auto;
 }
