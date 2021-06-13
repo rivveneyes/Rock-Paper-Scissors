@@ -8,10 +8,13 @@ const match = {
   wins: 0,
   lossed: 0,
   tie: 0,
+  total: 0,
   person: null,
   pc: null,
 };
 function checkWhoWon() {
+  outcomeDesc.classList = "outcome";
+  match.total++;
   if (
     (match.person === "scissor" && match.pc === "paper") ||
     (match.person === "rock" && match.pc === "scissors") ||
@@ -26,14 +29,14 @@ function checkWhoWon() {
     personChoice.className = "tie";
     pcChoice.className = "tie";
     outcomeDesc.innerText = "It's a Tie";
-    return;
   } else {
     pcChoice.className = "winner";
     personChoice.className = "loser";
     match.lossed++;
     outcomeDesc.innerText = "You Lost";
   }
-  winsDisplay.innerText = `Wins:${match.wins} Loss:${match.lossed}`;
+
+  winsDisplay.innerText = `Wins:${match.wins} | Loss:${match.lossed} |Total matches:${match.total}`;
 }
 options.forEach((option) => {
   option.addEventListener("click", () => {
@@ -46,8 +49,11 @@ options.forEach((option) => {
 });
 
 playButton.addEventListener("click", () => {
+  outcomeDesc.classList = "";
+  outcomeDesc.innerText = "";
   if (match.person === null) {
     outcomeDesc.innerText = "PLEASE PICK A OPTION";
+    outcomeDesc.classList = "alert";
     return;
   }
   const html = `<figcaption>PC Picked</figcaption>`;
